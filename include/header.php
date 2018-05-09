@@ -1,4 +1,5 @@
 <head>
+   <?php include("/include/top.php"); ?>
     <div id="header">
         <title>ShopMet - </title>
         <link rel="stylesheet" href="style.css"/>

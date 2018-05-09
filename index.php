@@ -1,4 +1,3 @@
-<?php include("/include/top.php"); ?>
 <?php include("/include/header.php"); ?>
 <?php include("/include/navigation.php"); ?>
 <?php include("/include/content1.php"); ?>
