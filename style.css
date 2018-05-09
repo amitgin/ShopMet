@@ -31,6 +31,7 @@
 #menu ul li {
     list-style: none;
     display: inline;
+    padding: 10px 25px;
     margin: 5px;
 }
 #content1 {
