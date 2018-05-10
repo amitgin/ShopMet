@@ -31,4 +31,5 @@
         </style>
         <img style="float:left;" id="logo" class="logo" src="image/adf.jpg" />
     </div>
+    <div><a href=/register.php>Register</a></div>
 </head>
