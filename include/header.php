@@ -1,7 +1,6 @@
 <head>
    <?php include("/include/top.php"); ?>
-    <div id="header">
-        <title>ShopMet - </title>
+   <title>ShopMet - </title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -29,7 +28,10 @@
                 margin: 20px;
             }
         </style>
-        <img style="float:left;" id="logo" class="logo" src="image/adf.jpg" />
+    <div id="header">
+        <div style="float:left;" ><img id="logo" class="logo" src="image/adf.jpg" /></div>
+        <div style="float:right;" ><a href=/register.php style="color: #fff; padding: 10px 20px 10px 20px; background: red; margin-right: 20px; border-radius: 45px;">Register</a></div>
+        <div style="clear:both"></div>
     </div>
-    <div><a href=/register.php>Register</a></div>
+
 </head>
