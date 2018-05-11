@@ -1,9 +1,18 @@
 <head>
     <?php include("/include/top.php"); ?>
-    <title>ShopMet - </title>
+    <title>ShopMet</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function show_sidebar() {
+            document.getElementById('menubox').style.visibility = "visible";
+        }
+
+        function hide_sidebar() {
+            document.getElementById('menubox').style.visibility = "hidden";
+        }
+    </script>
     <link rel="stylesheet" href="/css/style-main.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <style type="text/css">
@@ -45,7 +54,7 @@
         }
 
         .accountUserName {
-            color: #fff;
+            color: orange;
             display: inline-block;
             line-height: 14px;
             text-overflow: ellipsis;
@@ -58,64 +67,23 @@
             box-sizing: content-box;
         }
 
-        .hard-hidden {
-            display: none !important;
+        #menubox {
+            visibility: hidden;
         }
-
-        .hidden {
-            display: none !important;
-            visibility: hidden !important;
-        }
-
-        .dropdownAccount {
-            overflow: hidden;
-            text-align: left;
-            white-space: nowrap;
-            font-size: 13px;
-            width: 215px;
-            top: 62.6px;
-            right: 0;
-            z-index: 100;
-            position: absolute;
-            border-radius: 4px 0px 4px 4px;
-            background-color: #333;
-        }
-
-        .dropdownAccountNonLoggedIn .accountList,
-        .dropdownAccount .accountList {
-            float: left;
-        }
-
-        .dropdownAccount .accountList ul {
-            list-style-type: none;
-            z-index: 100;
-            width: 100%;
-            float: left;
-            padding: 15px 0px;
-        }
-
-        .dropdownAccountNonLoggedIn .accountList ul li,
-        .dropdownAccount .accountList ul li {
-            float: left !important;
-            width: 100%;
-            text-align: left !important;
+        #menuItem {
+            background: orange;
+            height: 20px;
+            width: 100px;
         }
     </style>
     <div id="header">
         <div style="float:left;"><img id="logo" class="logo" src="image/shopmet-logo.png" /></div>
         <div style="float:right;" class="accountTab">
-            <div class="accountInner">
+            <div class="accountInner" onMouseOver="show_sidebar()" onMouseOut="hide_sidebar()">
                 <span class="accountUserName">Sign In</span>
-                <div class="dropdownWrapper hard-hidden">
-                    <div class="dropdownAccount hiden">
-                        <div class="accountList">
-                            <ul>
-                                <li>abc</li>
-                                <li>abc</li>
-                                <li>abc</li>
-                                <li>abc</li>
-                            </ul>
-                        </div>
+                <div id="menubox">
+                    <div id="menuItem">
+                        hello
                     </div>
                 </div>
             </div>
