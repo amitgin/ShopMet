@@ -9,12 +9,16 @@
         padding: 15px;
         float: left;
         width: 48%;
+        border-radius: 10px;
+        height: 50%;
     }
     #register-box {
         border: 1px solid #333;
         padding: 15px;
         float: right;
         width: 48%;
+        border-radius: 10px;
+        height: 50%;
     }
 </style>
 <script src="js/ajax.js"></script>
@@ -40,22 +44,22 @@
         <form>
             <table>
                 <tr>
-                    <td style="width:50%; padding : 10px;">Name</td>
+                    <td style="width:50%; padding : 10px;">Name:</td>
                     <td  colspan="2"><input type="text" id="name" /></td>
                 </tr>
                 <tr>
-                    <td style="width:50%; padding : 10px;">email</td>
+                    <td style="width:50%; padding : 10px;">Email:</td>
                     <td colspan="2"><input type="text" /></td>
                 </tr>
                 <tr>
-                    <td  style="width:50%; padding : 10px;">Mobile</td>
+                    <td  style="width:50%; padding : 10px;">Mobile:</td>
                     <td><input type="text" id="mobile"/></td>
-                    <td><strong><a href="#">Verify</a></strong>
-
-                    <input type="button" name="Verify" id="verify_otp" value="Verify" onclick="document.getElementById('votp').style.display = 'block';" placeholder="Enter OTP" maxlength="6">
-                    <div style="display:none;" id="votp">
-                    <input type="text" id="otp"/>
-                    </div></td>
+                    <td>
+                        <input type="button" name="Verify" id="verify_otp" value="Verify" onclick="document.getElementById('votp').style.display = 'block';" placeholder="Enter OTP" maxlength="6">
+                        <div style="display:none;" id="votp">
+                        <input type="text" id="otp"/>
+                        </div>
+                    </td>
 
                 </tr>
                 <tr>
