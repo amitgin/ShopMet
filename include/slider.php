@@ -1,4 +1,4 @@
-<div id="content1">
+<div id="slider">
 
 <div class="bs-example">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
