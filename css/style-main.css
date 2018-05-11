@@ -1,10 +1,10 @@
 #top {
     width: 100%;
-    height: 40px;
+    height: 30px;
     margin-top: 0px;
-    background: #464f6b;
+    background: orange;
     color: #FFFFFF;
-    padding: 8px 0px 0px 15px;
+    padding: 5px 0px 0px 15px;
 }
 #header {
     width: 100%;
