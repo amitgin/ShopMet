@@ -3,6 +3,7 @@
         #footer{
             padding: 15px;
             display: flex;
+            border-top: 4px solid orange;
         }
         #footer-items {
             width: 22%;
