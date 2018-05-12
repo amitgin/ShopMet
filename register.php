@@ -54,12 +54,10 @@
                 <tr>
                     <td  style="width:50%; padding : 10px;">Mobile:</td>
                     <td><input type="text" id="mobile"/></td>
-<<<<<<< HEAD
+
                     <td><input type="button" name="Verify" id="verify_otp" value="Verify" onclick="document.getElementById('votp').style.display = 'block';" placeholder="Enter OTP" maxlength="6">
-=======
                     <td>
-                        <input type="button" name="Verify" id="verify_otp" value="Verify" onclick="document.getElementById('votp').style.display = 'block';" placeholder="Enter OTP" maxlength="6">
->>>>>>> origin/master
+
                         <div style="display:none;" id="votp">
                         <input type="text" id="otp"/>
                         </div>
