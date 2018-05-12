@@ -8,7 +8,6 @@
         function show_sidebar() {
             document.getElementById('menubox').style.visibility = "visible";
         }
-
         function hide_sidebar() {
             document.getElementById('menubox').style.visibility = "hidden";
         }
@@ -20,21 +19,17 @@
             background: white;
             margin-top: 20px;
         }
-
         .carousel .item {
             /* Prevent carousel from being distorted if for some reason image doesn't load */
             height: 350px;
         }
-
         .carousel .item img {
             height: 350px;
             width: 1350px;
         }
-
         .bs-example {
             margin: 20px;
         }
-
         .accountTab {
             height: 63px;
             color: #555555;
@@ -44,7 +39,6 @@
             cursor: pointer;
             border-left: 1px solid rgba(0, 0, 0, 0.07);
         }
-
         .accountInner {
             display: table-cell;
             vertical-align: middle;
@@ -52,7 +46,6 @@
             padding-top: 12px;
             padding-left: 22px;
         }
-
         .accountUserName {
             color: orange;
             display: inline-block;
@@ -66,7 +59,6 @@
             padding-bottom: 1px;
             box-sizing: content-box;
         }
-
         #menubox {
             visibility: hidden;
         }
