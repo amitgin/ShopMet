@@ -1,8 +1,8 @@
 <?php
-$servername="localhost";
+$servername="shopmet";
 $username="root";
 $password="";
-$dbname="register";
+$dbname="shopmet";
 
 $conn = mysqli_connect($servername,$username,$password,$dbname);
 ?>
