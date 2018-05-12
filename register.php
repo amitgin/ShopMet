@@ -1,3 +1,4 @@
+<?php include ("/include/connection.php"); ?>
 <?php include("/include/header.php"); ?>
 <?php include("/include/navigation.php"); ?>
 <style>
@@ -45,15 +46,15 @@
             <table>
                 <tr>
                     <td style="width:50%; padding : 10px;">Name:</td>
-                    <td  colspan="2"><input type="text" id="name" /></td>
+                    <td  colspan="2"><input type="text" name="name" id="name" /></td>
                 </tr>
                 <tr>
                     <td style="width:50%; padding : 10px;">Email:</td>
-                    <td colspan="2"><input type="text" /></td>
+                    <td colspan="2"><input type="text" name="email" /></td>
                 </tr>
                 <tr>
                     <td  style="width:50%; padding : 10px;">Mobile:</td>
-                    <td><input type="text" id="mobile"/></td>
+                    <td><input type="text" name="mobile" id="mobile"/></td>
 
                     <td><input type="button" name="Verify" id="verify_otp" value="Verify" onclick="document.getElementById('votp').style.display = 'block';" placeholder="Enter OTP" maxlength="6">
                     <td>
@@ -65,10 +66,33 @@
 
                 </tr>
                 <tr>
-                    <td colspan="3" style="text-align:center;"><input type="button" value="Submit" id="submit"/></td>
+                    <td colspan="3" style="text-align:center;"><input type="submit" value="submit" name="submit" id="submit"/></td>
                 </tr>
             </table>
         </form>
+        <?php
+
+if($_POST['submit'])
+{
+       $nm = $_POST['name'];
+       $mn = $_POST['mobile'];
+       $eml = $_POST['email'];
+
+
+if($nm!="" && $mn!="" && $eml!="")
+   {
+	$query= "INSERT INTO REGISTER VALUES('$nm','$mn','$eml')";
+    $data = mysqli_query($conn, $query);
+
+	if($data){echo "Data saved into database successfully";}
+   }
+   else{
+	        echo "All fields are required";
+        }
+
+}
+
+?>
     </div>
     <div style="clear:both;"></div>
 </div>
