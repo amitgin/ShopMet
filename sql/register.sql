@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `insert`
+-- Database: `register`
 --
 
 -- --------------------------------------------------------
@@ -27,17 +27,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `register` (
-  `username` varchar(20) NOT NULL,
-  `mobileno` int(50) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `mobile` int(50) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `register`
 --
 
-INSERT INTO `register` (`username`, `mobileno`, `email`, `password`) VALUES
+INSERT INTO `register` (`name`, `mobile`, `email`) VALUES
 ('abhi241092', 2147483647, 'abhi241092@gmail.com', 'abhi'),
 ('abhi241094', 2147483647, 'qw@gmail.com', 'qwerty');
 
@@ -49,7 +48,7 @@ INSERT INTO `register` (`username`, `mobileno`, `email`, `password`) VALUES
 -- Indexes for table `register`
 --
 ALTER TABLE `register`
- ADD PRIMARY KEY (`username`,`mobileno`,`email`);
+ ADD PRIMARY KEY (`name`,`mobile`,`email`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

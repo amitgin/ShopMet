@@ -75,7 +75,13 @@
                 <span class="accountUserName">Sign In</span>
                 <div id="menubox">
                     <div id="menuItem">
-                        hello
+                       <table>
+                       <tr><td><a href="register.php">Register</a></td></tr>
+                        <tr><td><a href="#">Your Order</a></td></tr>
+                        <tr><td><a href="#">Your Account</a></td></tr>
+                        <tr><td><a href="#">Your Return</a></td></tr>
+                        </table>
+
                     </div>
                 </div>
             </div>
