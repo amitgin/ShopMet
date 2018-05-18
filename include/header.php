@@ -72,7 +72,7 @@
         <div style="float:left;"><img id="logo" class="logo" src="image/shopmet-logo.png" /></div>
         <div style="float:right;" class="accountTab">
             <div class="accountInner" onMouseOver="show_sidebar()" onMouseOut="hide_sidebar()">
-                <span class="accountUserName">Sign In</span>
+                <span class="accountUserName"><a href="/login.php">Sign In</a></span>
                 <div id="menubox">
                     <div id="menuItem">
                        <table>
