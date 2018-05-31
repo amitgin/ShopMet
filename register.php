@@ -54,12 +54,14 @@ if(isset($_POST['signUpAction'])) {
         echo("<script>alert('Fill All the * fields')</script>");
         exit();
     }else{
-        $query= "INSERT INTO `users` (name, mobile, email) VALUES ('$nm','$mn','$eml')";
+        $query= "INSERT INTO USER VALUES ('$nm','$eml','$mn')";
         $result = mysqli_query($conn, $query);
         if($result){
             $smsg = "User Created Successfully.";
+            echo("<script>alert('User Created Successfull')</script>");
         }else{
             $fmsg ="User Registration Failed";
+            echo("<script>alert('User Created UNSuccessfull')</script>");
         }
     }
 }
